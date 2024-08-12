@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Eliminamos el color de fondo del body */
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* Fondo para la galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-image: url('https://resources.motogp.pulselive.com/photo-resources/2024/03/08/bcd07a02-1780-40e4-88cf-baf5601a65e0/report-MGP-FP2.jpg?width=1440&height=810'); /* Reemplaza con tu URL de imagen de fondo */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el área */
+    background-position: center; /* Centra la imagen de fondo */
+    background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza */
+    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto */
+    border-radius: 8px; /* Agrega bordes redondeados si deseas */
+    box-shadow: 0 4px 8px rgba(14, 14, 14, 0.253); /* Agrega una sombra ligera para dar profundidad */
+}
+
+/* Estilo para los elementos figure */
+figure {
+    margin: 0;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Efecto en hover para las figuras */
+figure:hover {
+    transform: scale(1.05);
+    border-color: #00ff15;
+}
+
+/* Estilo para las imágenes */
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 4px; /* Agrega bordes redondeados a las imágenes */
+}
+
+/* Estilo para el pie de foto */
+figcaption {
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: #00ffd5;
+}
